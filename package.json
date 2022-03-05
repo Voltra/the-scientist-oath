@@ -1,0 +1,25 @@
+{
+	"name": "gridsome",
+	"private": true,
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"lint": "eslint \"./**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern"
+	},
+	"dependencies": {
+		"@gridsome/plugin-sitemap": "^0.4.0",
+		"gridsome": "^0.7.0",
+		"gridsome-plugin-precompress": "^1.0.0",
+		"gridsome-plugin-service-worker": "^0.2.8",
+		"gridsome-plugin-static-metadata": "0.0.1",
+		"gridsome-source-static-meta": "^1.0.1"
+	},
+	"devDependencies": {
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"eslint": "^8.10.0",
+		"eslint-plugin-gridsome": "^1.6.2",
+		"eslint-plugin-vue": "^8.5.0",
+		"vue-eslint-parser": "^8.3.0"
+	}
+}
