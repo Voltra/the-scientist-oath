@@ -1,0 +1,37 @@
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+
+html {
+	font-size: 16px;
+	font-family: $text-font;
+	font-weight: normal;
+}
+
+body {
+	background-color: $background;
+	color: $text;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $title-font;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+a[href] {
+	color: $primary;
+}

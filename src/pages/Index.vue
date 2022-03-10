@@ -1,3 +1,12 @@
+<static-query>
+	query {
+		metadata {
+			siteName
+			siteDescription
+		}
+	}
+</static-query>
+
 <template>
   <Layout>
 
@@ -20,9 +29,12 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Hello, world!'
-  }
+  metaInfo() {
+	  return {
+		title: this.$static.metadata.siteName,
+		description: this.$static.metadata.siteDescription,
+	};
+  },
 }
 </script>
 
