@@ -11,11 +11,13 @@
 </static-query>
 
 <template>
-	<ul class="oathItems">
-		<li v-for="item in oathItems" :key="item.slug" :id="item.slug" class="_item">
-			<OathItem :item="item"/>
-		</li>
-	</ul>
+	<section>
+		<ul class="oathItems">
+			<li v-for="item in oathItems" :key="item.slug" :id="item.slug" class="_item">
+				<OathItem :item="item"/>
+			</li>
+		</ul>
+	</section>
 </template>
 
 <script>

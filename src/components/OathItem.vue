@@ -41,9 +41,19 @@
 	@use "@/scss/mixins" as *;
 
 	.oathItem {
+		@include centerMargin;
+
+		display: block;
+		width: 95%;
+		max-width: 45ch;
+
 		text-decoration: none;
 
 		&.-collapsed {
+			._header {
+				border-radius: inherit;
+			}
+
 			._content {
 				@include verticalPadding(0);
 
@@ -54,30 +64,56 @@
 
 		._wrapper {
 			color: $text;
-			background-color: $secondary;
+			background-color: $primary;
+			border-radius: $bigRadius;
 		}
 
 		._header,
 		._content {
 			display: block;
+			border-radius: inherit;
 		}
 
 		._header {
-			font-size: 1.2rem;
+			$color: $primary;
+
+			@include radiusBottom(0);
+
 			padding: 1rem;
+
+			font-size: 1.2rem;
+			background-color: $color;
+
+			transition: 0.5s ease-in-out;
+			transition-property: max-height, padding, opacity, border-radius;
+
+			&::selection {
+				color: $color;
+				background-color: $text;
+			}
 		}
 
 		._content {
+			$color: $secondary;
+
+			@include radiusTop(0);
+
 			height: auto;
 			max-height: 100vh;
 			padding: 1.5rem;
 
+			background-color: $color;
 			opacity: 1;
 			cursor: default;
-			border-top: 1px solid $primary;
+			border-top: 1px solid $background;
 
 			transition: 0.5s ease-in-out;
-			transition-property: max-height, padding, opacity;
+			transition-property: max-height, padding, opacity, border-radius;
+
+			&::selection {
+				color: $color;
+				background-color: $text;
+			}
 		}
 	}
 </style>
