@@ -24,6 +24,11 @@
 			"for": "Atom logo",
 			"url": "https://pixabay.com/vectors/atom-atomic-model-icon-nuclear-1294810/",
 			"name": "Pixabay"
+		},
+		{
+			"for": "French version of the Hyppocratic Oath",
+			"url": "https://www.conseil-national.medecin.fr/sites/default/files/medecins_ns_-_serment.pdf",
+			"name": "Conseil national de l'Ordre des Médecins de France"
 		}
 	]
 }

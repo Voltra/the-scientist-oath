@@ -12,6 +12,18 @@ module.exports = {
 	siteDescription: "The Oath to live by for Scientists all around the globe",
 	plugins: [
 		{
+			use: "gridsome-source-static-meta",
+			options: {
+				path: "./src/content/*.{json,yml}"
+			}
+		},
+		{
+			use: "@gridsome/plugin-sitemap",
+			options: {
+				include: ["/", "/credits"]
+			}
+		},
+		{
 			use: "gridsome-plugin-service-worker",
 			options: {
 				networkFirst: {
@@ -36,17 +48,5 @@ module.exports = {
 				robots: true
 			}
 		},
-		{
-			use: "gridsome-source-static-meta",
-			options: {
-				path: "./src/content/*.json"
-			}
-		},
-		{
-			use: "@gridsome/plugin-sitemap",
-			options: {
-				include: ["/", "/credits"]
-			}
-		}
 	]
 };

@@ -1,3 +1,4 @@
+@import "./reset";
 @import "./variables";
 @import "./mixins";
 @import "./fonts";
@@ -21,15 +22,15 @@ h3 {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: $h1Size;
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: $h2Size;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: $h3Size;
 }
 
 a[href] {

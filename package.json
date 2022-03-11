@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"@gridsome/plugin-sitemap": "^0.4.0",
+		"@gridsome/source-filesystem": "^0.6.2",
 		"gridsome": "^0.7.0",
 		"gridsome-plugin-precompress": "^1.0.0",
 		"gridsome-plugin-service-worker": "^0.2.8",

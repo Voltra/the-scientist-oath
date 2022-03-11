@@ -1,0 +1,44 @@
+//// [MARGINS]
+@mixin horizontalMargin($value) {
+	margin-right: $value;
+	margin-left: $value;
+}
+
+@mixin verticalMargin($value) {
+	margin-top: $value;
+	margin-bottom: $value;
+}
+
+@mixin centerMargin {
+	@include horizontalMargin(auto);
+}
+
+//// [PADDINGS]
+@mixin horizontalPadding($value) {
+	padding-right: $value;
+	padding-left: $value;
+}
+
+@mixin verticalPadding($value) {
+	padding-top: $value;
+	padding-bottom: $value;
+}
+
+//// [FLEX]
+@mixin flex($display: flex, $justify, $align: center) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin flexCentered($display: flex) {
+	@include flex($display, center, center);
+}
+
+@mixin flexStart($display: flex, $align: flex-start) {
+	@include flex($display, flex-start, $align);
+}
+
+@mixin flexEnd($display: flex, $align: flex-end) {
+	@include flex($display, flex-end, $align);
+}

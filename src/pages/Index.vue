@@ -8,38 +8,62 @@
 </static-query>
 
 <template>
-  <Layout>
+  <Layout class="home">
+	<h1 class="_title">{{ siteName }}</h1>
+	<p class="_subTitle">{{ siteDescription }}</p>
+	<!-- Learn how to use images here: https://gridsome.org/docs/images -->
+	<g-image alt="Example image" src="/logo.svg" width="135" height="135" />
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+	<section>
+		<OathItems/>
+	</section>
   </Layout>
 </template>
 
 <script>
+import OathItems from "../components/OathItems.vue";
 export default {
-  metaInfo() {
-	  return {
-		title: this.$static.metadata.siteName,
-		description: this.$static.metadata.siteDescription,
-	};
-  },
+    metaInfo() {
+        return {
+            title: this.siteName,
+            description: this.siteDescription,
+        };
+    },
+    components: { OathItems },
+    computed: {
+        siteName() {
+            return this.$static.metadata.siteName;
+        },
+        siteDescription() {
+            return this.$static.metadata.siteDescription;
+        },
+    },
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="scss">
+	@use "@/scss/mixins" as *;
+
+	.home {
+		& > ._title,
+		& > ._subTitle {
+			@include centerMargin;
+			text-align: center;
+		}
+
+		& > ._title {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.home-links a {
+		margin-right: 1rem;
+	}
+
+	img {
+		display: block;
+		width: 250px;
+		max-width: 95%;
+		margin: 0 auto;
+	}
 </style>
