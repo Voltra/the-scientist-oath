@@ -1,10 +1,11 @@
 oathItems:
-  - title: I will remain impartial, uncorrupted and just
-    slug: remain-impartial-uncorrupted
+  - title: I will work for the betterment of humanity
+    slug: betterment-of-humanity
     description: |
-      I will not, under any circumstances, let myself be corrupted, bought or influenced
-      to favor anyone or anything in any of my work. I will not let outside forces
-      hinder my work or deviate its course.
+      My work shall only be to further the betterment of humanity.
+      I shall not work on making it regress. I shall not assist
+      in its destruction. I will only work towards making every
+      human being's life easier to bear.
 
   - title: I will not let my personal biases hinder my work
     slug: strive-towards-objectivity
@@ -15,20 +16,29 @@ oathItems:
       I will not discriminate and will remain unbiased in my work.
       My work shall be of service to everyone, and on equal footing.
 
+  - title: I will remain impartial, uncorrupted and just
+    slug: remain-impartial-uncorrupted
+    description: |
+      I will not, under any circumstances, let myself be corrupted, forced, bought or influenced
+      to favor anyone or anything in any of my work. I will not let outside forces
+      hinder my work or deviate its course. I will keep the independence required to do my work.
+      I will, under no circumstances, use my knowledge to work against the laws of humanity.
+
+  - title: I will not abuse of the privileges bestowed upon me
+    slug: wont-abuse-privileges
+    description: |
+      I will not use the eduction or knowledge I have received and developed
+      to further any personal agenda. I will not make a profit off of the relative
+      ignorance of those who are affected by my work. I will not take shortcuts
+      and take shortcuts to make my work easier.
+
   - title: I will question whether I should, before questioning whether I could
     slug: should-before-could
     description: |
       Due to the sensitive nature of my work and its potential ramifications, I will
       always put the safety of everyone else on a higher priority than my own
       personal desires and ambitions.
-
-  - title: I will work for the betterment of humanity
-    slug: betterment-of-humanity
-    description: |
-      My work shall only be to further the betterment of humanity.
-      I shall not work on making it regress. I shall not assist
-      in its destruction. I will only work towards making every
-      human being's life easier to bear.
+      I will stop myself from doing things I shouldn't.
 
   - title: I will not partake in causing harm
     slug: do-not-cause-harm
@@ -37,10 +47,10 @@ oathItems:
       My work shall not put anyone in harm's way.
       My work shall not make it easy to put anyone in harm's way.
 
-  - title: I will neither be judge, nor jury, nor executioner.
+  - title: I will be neither judge, nor jury, nor executioner.
     slug: not-judge-nor-jury-nor-executioner
     description: |
-      It is not my place to judge or condamn.
+      It is not my place to judge or punish.
       My role is to help, counsel and assist.
       Although I may be able to alert the proper authorities,
       it is my duty to understand and to make sure

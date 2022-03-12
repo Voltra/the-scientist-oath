@@ -36,3 +36,12 @@ h3 {
 a[href] {
 	color: $primary;
 }
+
+svg {
+	&,
+	line,
+	path,
+	ellipse {
+		fill: currentColor;
+	}
+}

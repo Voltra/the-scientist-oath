@@ -43,6 +43,10 @@
 	@include flex($display, flex-end, $align);
 }
 
+@mixin flexSpread($display: flex, $align: center) {
+	@include flex($display, space-between, $align);
+}
+
 //// [RADIUS]
 @mixin radiusTop($value) {
 	border-top-right-radius: $value;

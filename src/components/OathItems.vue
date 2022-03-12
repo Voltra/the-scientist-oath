@@ -34,7 +34,16 @@
 </script>
 
 <style lang="scss" scoped>
+	@use "@/scss/mixins" as *;
+
 	.oathItems {
+
+		@include verticalMargin(1rem);
+
 		list-style-type: none;
+
+		._item {
+			margin-bottom: 2rem;
+		}
 	}
 </style>
