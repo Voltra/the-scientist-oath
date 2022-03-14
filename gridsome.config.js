@@ -43,7 +43,7 @@ module.exports = {
 		{
 			use: "gridsome-plugin-static-metadata",
 			options: {
-				image: `${siteUrl}/og.jpg`,
+				image: `${siteUrl}${pathPrefix}/og.jpg`,
 				themeColor: "#0b1011",
 				lang: "en",
 				locale: "en_US",
