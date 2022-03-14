@@ -5,9 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const siteUrl = process.env.APP_URL || "http://localhost:8080";
+const pathPrefix = process.env.PATH_PREFIX;
 
 module.exports = {
 	siteUrl,
+	pathPrefix,
 	siteName: "The Scientist's Oath",
 	siteDescription: "The Oath to live by for Scientists all around the globe",
 	plugins: [

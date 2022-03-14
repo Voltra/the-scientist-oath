@@ -11,7 +11,7 @@ query {
     <header class="header">
       <strong>
         <g-link to="/">
-			<g-image class="_logo" src="/logo.svg" :alt="logoAlt" width="80" height="80" />
+			<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80" />
 		</g-link>
       </strong>
 

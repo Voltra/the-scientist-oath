@@ -8,7 +8,7 @@
 			{{ subTitle }}
 		</p>
 
-		<g-image class="_logo" src="/logo.svg" alt="Logo" width="135" height="135" />
+		<g-image class="_logo" src="@/assets/svg/logo.svg" alt="Logo" width="135" height="135" />
 	</section>
 </template>
 
