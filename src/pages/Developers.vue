@@ -5,7 +5,8 @@ query {
 			id,
 			displayName,
 			website,
-			title
+			title,
+			timeFrame
 		}
 	}
 }
@@ -19,7 +20,7 @@ query {
 		/>
 
 		<div v-for="dev in devs" :key="dev.id">
-			<a :href="dev.website" target="_blank" tabindex="0">{{ dev.displayName }}</a> | {{ dev.title }}
+			<a :href="dev.website" target="_blank" tabindex="0">{{ dev.displayName }}</a> ({{ dev.timeFrame }}) | {{ dev.title }}
 		</div>
 	</Layout>
 </template>
