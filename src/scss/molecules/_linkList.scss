@@ -1,0 +1,5 @@
+.linkList {
+	& > ._item {
+		@include verticalMargin(1em);
+	}
+}

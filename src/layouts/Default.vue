@@ -17,7 +17,7 @@ query {
 
       <nav class="nav">
         <g-link class="nav__link" to="/credits">Credits</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
+        <g-link class="nav__link" to="/developers">Developers</g-link>
       </nav>
     </header>
     <slot/>
