@@ -20,10 +20,10 @@ import OathItems from "../components/OathItems.vue";
 import Intro from "../components/Intro.vue";
 export default {
 	metaInfo() {
-		return {
+		return this.$seo({
 			title: this.siteName,
 			description: this.siteDescription,
-		};
+		});
 	},
 	components: { OathItems, Intro },
 	computed: {
@@ -42,12 +42,5 @@ export default {
 
 .home-links a {
 	margin-right: 1rem;
-}
-
-img {
-	display: block;
-	width: 250px;
-	max-width: 95%;
-	margin: 0 auto;
 }
 </style>

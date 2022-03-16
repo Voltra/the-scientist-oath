@@ -1,27 +1,27 @@
 <static-query>
 query {
-  metadata {
-    siteName
-  }
+metadata {
+siteName
+}
 }
 </static-query>
 
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">
-			<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80" />
-		</g-link>
-      </strong>
+	<div class="layout">
+		<header class="header">
+			<strong>
+				<g-link to="/">
+					<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80"/>
+				</g-link>
+			</strong>
 
-      <nav class="nav">
-        <g-link class="nav__link" to="/credits">Credits</g-link>
-        <g-link class="nav__link" to="/developers">Developers</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+			<nav class="nav">
+				<g-link class="nav__link" to="/scientists">Scientists</g-link>
+				<g-link class="nav__link" to="/credits">Credits</g-link>
+			</nav>
+		</header>
+		<slot/>
+	</div>
 </template>
 
 <script>
@@ -31,38 +31,39 @@ query {
 				return `${this.$static.metadata.siteName} logo`;
 			},
 		},
-	}
+	};
 </script>
 
 <style lang="scss">
-@import "@/scss/main.scss";
+	@import "@/scss/main.scss";
 
-body {
-  margin:0;
-  padding:0;
-}
+	body {
+		margin: 0;
+		padding: 0;
+	}
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+	.layout {
+		max-width: 760px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 80px;
+	.header {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		height: 80px;
 
-  ._logo {
-	  height: 80px;
-  }
-}
+		._logo {
+			height: 80px;
+		}
+	}
 
-.nav__link {
-  margin-left: 20px;
-}
+	.nav__link {
+		margin-left: 20px;
+	}
 </style>

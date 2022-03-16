@@ -14,6 +14,9 @@ module.exports = {
 	siteDescription: "The Oath to live by for Scientists all around the globe",
 	plugins: [
 		{
+			use: "gridsome-plugin-seo",
+		},
+		{
 			use: "gridsome-source-static-meta",
 			options: {
 				path: "./src/content/*.{json,yml}"
