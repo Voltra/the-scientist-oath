@@ -1,26 +1,36 @@
 <static-query>
 query {
-metadata {
-siteName
-}
+	metadata {
+		siteName
+	}
 }
 </static-query>
 
 <template>
-	<div class="layout">
+	<div class="layout" itemscope itemtype="https://schema.org/WebPage">
 		<header class="header">
 			<strong>
-				<g-link to="/">
+				<g-link to="/" itemprop="relatedLink significantLink">
 					<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80"/>
 				</g-link>
 			</strong>
 
 			<nav class="nav">
-				<g-link class="nav__link" to="/scientists">Scientists</g-link>
-				<g-link class="nav__link" to="/credits">Credits</g-link>
+				<g-link class="nav__link" to="/scientists" itemprop="relatedLink significantLink">
+					Scientists
+				</g-link>
+				<g-link class="nav__link" to="/credits" itemprop="relatedLink significantLink">
+					Credits
+				</g-link>
+				<g-link class="nav__link" to="/why" itemprop="relatedLink significantLink">
+					Why
+				</g-link>
 			</nav>
 		</header>
-		<slot/>
+
+		<main>
+			<slot/>
+		</main>
 	</div>
 </template>
 
@@ -35,12 +45,7 @@ siteName
 </script>
 
 <style lang="scss">
-	@import "@/scss/main.scss";
-
-	body {
-		margin: 0;
-		padding: 0;
-	}
+	@import "~@/scss/main.scss";
 
 	.layout {
 		max-width: 760px;
@@ -56,6 +61,7 @@ siteName
 		align-items: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		width: 100%;
 		height: 80px;
 
 		._logo {

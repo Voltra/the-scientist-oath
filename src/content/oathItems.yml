@@ -27,10 +27,11 @@ oathItems:
   - title: I will not abuse of the privileges bestowed upon me
     slug: wont-abuse-privileges
     description: |
-      I will not use the eduction or knowledge I have received and developed
+      I will not use the education or knowledge I have received and developed
       to further any personal agenda. I will not make a profit off of the relative
       ignorance of those who are affected by my work. I will not take shortcuts
-      or cut corners to make my work easier.
+      or cut corners to make my work easier. I will not break the trust of those affected by my work.
+      I will keep secret what is confessed to me as part of my work.
 
   - title: I will question whether I should, before questioning whether I could
     slug: should-before-could
@@ -59,3 +60,19 @@ oathItems:
       their judgement, it shall not replace it.
       I will not let others use my assitance as a
       replacement for a proper judgement.
+
+  - title: In science, I will share and not keep secrets
+    slug: share-not-keep-secrets
+    description: |
+      Advances in Science shall be shared with peers so that we may, as a whole,
+      help make the world a better place for everyone, everywhere.
+      Although there may be trademarks, patents and property, I shall strive to make
+      discoveries available to all. I will help my peers so that, together, we may
+      reach greater heights.
+
+  - title: I will reevaluate every bit of certainty
+    slug: reevalute-certainty
+    description: |
+      Only through time can we truly know if something is for certain. It is our duty to challenge what is known,
+      if it still applies to the current state of the world, if it is still correct and true. Reevaluating may also
+      help making discoveries.

@@ -19,8 +19,14 @@ query {
 			:subTitle="description"
 		/>
 
-		<div v-for="scientist in scientists" :key="scientist.id">
-			<a :href="scientist.website" target="_blank" tabindex="0">{{ scientist.displayName }}</a> ({{ scientist.timeFrame }}) | {{ scientist.title }}
+		<div v-for="scientist in scientists" :key="scientist.id" itemscope itemtype="https://schema.org/Person">
+			<a :href="scientist.website" target="_blank" tabindex="0" itemprop="name url sameAs">
+				{{ scientist.displayName }}
+			</a>
+			({{ scientist.timeFrame }}) | {{ scientist.title }}
+			<span class="print-only">
+				| {{ scientist.website }}
+			</span>
 		</div>
 	</Layout>
 </template>
