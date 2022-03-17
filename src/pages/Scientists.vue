@@ -6,7 +6,8 @@ query {
 			displayName,
 			website,
 			title,
-			timeFrame
+			timeFrame,
+			flag
 		}
 	}
 }
@@ -20,6 +21,9 @@ query {
 		/>
 
 		<div v-for="scientist in scientists" :key="scientist.id" itemscope itemtype="https://schema.org/Person">
+			<span class="dont-print">
+				{{ scientist.flag }}
+			</span>
 			<a :href="scientist.website" target="_blank" tabindex="0" itemprop="name url sameAs">
 				{{ scientist.displayName }}
 			</a>

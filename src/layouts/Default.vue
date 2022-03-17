@@ -8,7 +8,7 @@ query {
 
 <template>
 	<div class="layout" itemscope itemtype="https://schema.org/WebPage">
-		<header class="header">
+		<header class="header dont-print">
 			<strong>
 				<g-link to="/" itemprop="relatedLink significantLink">
 					<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80"/>
