@@ -16,12 +16,13 @@ oathItems:
       I will not discriminate and will remain unbiased in my work.
       My work shall be of service to everyone, and on equal footing.
 
-  - title: I will remain impartial, uncorrupted and just
-    slug: remain-impartial-uncorrupted
+  - title: I will remain impartial, non-corrupted and just
+    slug: remain-impartial-non-corrupted
     description: |
       I will not, under any circumstances, let myself be corrupted, forced, bought or influenced
       to favor anyone or anything in any of my work. I will not let outside forces
       hinder my work or deviate its course. I will keep the independence required to do my work.
+      I will maintain the integrity required to do my work.
       I will, under no circumstances, use my knowledge to work against the laws of humanity.
 
   - title: I will not abuse of the privileges bestowed upon me
