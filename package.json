@@ -1,6 +1,7 @@
 {
 	"name": "the-scientist-oath",
 	"private": true,
+	"version": "1.0.0",
 	"scripts": {
 		"build": "gridsome build",
 		"develop": "gridsome develop",
