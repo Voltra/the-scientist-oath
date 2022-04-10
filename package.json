@@ -1,12 +1,12 @@
 {
 	"name": "the-scientist-oath",
 	"private": true,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"scripts": {
 		"build": "gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
-		"lint": "eslint \"./**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern",
+		"lint": "eslint \"./src/**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},
@@ -14,6 +14,7 @@
 		"@gridsome/plugin-sitemap": "^0.4.0",
 		"@gridsome/source-filesystem": "^0.6.2",
 		"gridsome": "^0.7.0",
+		"gridsome-plugin-manifest": "^0.3.5",
 		"gridsome-plugin-precompress": "^1.0.0",
 		"gridsome-plugin-seo": "^1.0.2",
 		"gridsome-plugin-service-worker": "^0.2.8",

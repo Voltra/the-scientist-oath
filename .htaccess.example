@@ -1,0 +1,77 @@
+RewriteEngine On
+
+# [HTTPS]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+# [/HTTPS]
+
+# [WWW]
+RewriteCond %{HTTP_HOST} ^the-scientist-oath\.com$ [NC]
+RewriteRule (.*) https://www.the-scientist-oath.com/$1 [R=301,L]
+# [/WWW]
+
+# [PWA]
+<Files /service-worker.js>
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</Files>
+
+<Files /assets/js/service-worker.js>
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</Files>
+# [/PWA]
+
+# [COMPRESSION]
+  # Serve Brotli
+  RewriteCond %{HTTP:Accept-encoding} br
+  RewriteCond %{REQUEST_FILENAME}\.br -s
+  RewriteRule ^(.*)\.(html|css|js|json)$ $1.$2.br [QSA]
+
+  # Serve GZip
+  RewriteCond %{HTTP:Accept-encoding} gzip
+  RewriteCond %{REQUEST_FILENAME}\.gz -s
+  RewriteRule ^(.*)\.(html|css|js|json)$ $1.$2.gz [QSA]
+
+  # Serve correct content types, and prevent mod_deflate double gzip.
+  RewriteRule \.html\.gz$ - [T=text/html,E=no-gzip:1]
+  RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+  RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+  RewriteRule \.json\.gz$ - [T=application/json,E=no-gzip:1]
+  RewriteRule \.html\.br$ - [T=text/html,E=no-gzip:1]
+  RewriteRule \.css\.br$ - [T=text/css,E=no-gzip:1]
+  RewriteRule \.js\.br$ - [T=text/javascript,E=no-gzip:1]
+  RewriteRule \.json\.br$ - [T=application/json,E=no-gzip:1]
+
+ <FilesMatch "\.(js|css|json|html)\.gz$">
+    # Serve correct encoding type.
+    Header set Content-Encoding gzip
+    # Force proxies to cache gzipped & non-gzipped css/js files separately.
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+  <FilesMatch "\.(js|css|json|html)\.br$">
+    # Serve correct encoding type.
+    Header set Content-Encoding br
+    # Force proxies to cache gzipped & non-gzipped css/js files separately.
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+# [/COMPRESSION]
+
+# [CACHING]
+ExpiresActive On
+
+<FilesMatch "\.(ico|jpe?g|png|svg|css|html|js|json|vue|ttf)(\.gz|\.br)?$">
+  ExpiresDefault "access plus 1 month"
+  FileETag All
+</FilesMatch>
+# [/CACHING]
