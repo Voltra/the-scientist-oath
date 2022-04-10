@@ -29,6 +29,11 @@
 			"for": "French version of the Hyppocratic Oath",
 			"url": "https://www.conseil-national.medecin.fr/sites/default/files/medecins_ns_-_serment.pdf",
 			"name": "Conseil national de l'Ordre des Médecins de France"
+		},
+		{
+			"for": "The Programmer's Oath",
+			"url": "https://deepsource.io/programmers-oath/",
+			"name": "Robert C. Martin"
 		}
 	]
 }

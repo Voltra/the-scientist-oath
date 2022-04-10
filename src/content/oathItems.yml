@@ -6,6 +6,7 @@ oathItems:
       I shall not work on making it regress. I shall not assist
       in its destruction. I will only work towards making every
       human being's life easier to bear.
+      I will help shape a future in which the use of science is more responsible.
 
   - title: I will not let my personal biases hinder my work
     slug: strive-towards-objectivity
@@ -77,3 +78,10 @@ oathItems:
       Only through time can we truly know if something is for certain. It is our duty to challenge what is known,
       if it still applies to the current state of the world, if it is still correct and true. Reevaluating may also
       help making discoveries.
+
+  - title: I will perfect my craft
+    slug: perfect-my-craft
+    description: |
+      I will, within the limits of reason and the realm of possibilities, perfect my craft by staying up to date
+      with modern practices, techniques and advancements. I will try to find ways to make myself more efficient as well
+      as more accurate.

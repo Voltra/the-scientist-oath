@@ -8,14 +8,14 @@
 			{{ subTitle }}
 		</p>
 
-		<g-image class="_logo" src="@/assets/svg/logo.svg" alt="Logo" width="135" height="135" />
+		<g-image alt="Logo" class="_logo" height="135" src="@/assets/svg/logo.svg" width="135"/>
 	</section>
 </template>
 
 <script>
 	export default {
 		props: ["title", "subTitle"],
-	}
+	};
 </script>
 
 <style lang="scss" scoped>

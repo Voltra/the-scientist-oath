@@ -9,7 +9,7 @@ siteDescription
 
 <template>
 	<Layout class="home">
-		<Intro :title="siteName" :subTitle="siteDescription"/>
+		<Intro :subTitle="siteDescription" :title="siteName"/>
 
 		<OathItems/>
 	</Layout>
@@ -21,10 +21,10 @@ siteDescription
 
 	export default {
 		metaInfo() {
-			return this.$seo({
+			return {
 				title: this.siteName,
 				description: this.siteDescription,
-			});
+			};
 		},
 		components: { OathItems, Intro },
 		computed: {

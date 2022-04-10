@@ -12,6 +12,7 @@ module.exports = {
 	pathPrefix,
 	siteName: "The Scientist's Oath",
 	siteDescription: "The Oath to live by for Scientists all around the globe",
+	icon: "./src/favicon.png",
 	plugins: [
 		{
 			use: "gridsome-plugin-seo",
@@ -25,14 +26,14 @@ module.exports = {
 		{
 			use: "@gridsome/plugin-sitemap",
 			options: {
-				include: ["/", "/credits"]
+				include: ["/", "/credits", "/scientists", "/why"]
 			}
 		},
 		{
 			use: "gridsome-plugin-service-worker",
 			options: {
 				networkFirst: {
-					routes: ["/"],
+					cacheName: "nf",
 					fileTypes: ["document", "script", "style", "image"]
 				}
 			}

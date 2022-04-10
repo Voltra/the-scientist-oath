@@ -1,21 +1,25 @@
 <template>
 	<Layout class="why">
 		<Intro
-			:title="title"
 			:subTitle="description"
+			:title="title"
 		/>
 
 		<p>
 			Mixing Science and Politics has always been a weird concept: one strives towards objectivity while the other
-			strives towards subjectivity. One relies on fact where the other is based on a set of personal views and preferences.
-			We also all know stories of corruption, of greed, of abuse of power, of lack of responsibility, of lack of independence&hellip;
+			strives towards subjectivity. One relies on fact where the other is based on a set of personal views and
+			preferences.
+			We also all know stories of corruption, of greed, of abuse of power, of lack of responsibility, of lack of
+			independence&hellip;
 		</p>
 
 		<br/>
 
 		<p>
-			We all picture clearly companies who think they can do whatever they want, and scientists that just comply or give in.
-			We all know people who act irrationally, erratically, or who think rules, regulations and laws don't apply to them.
+			We all picture clearly companies who think they can do whatever they want, and scientists that just comply
+			or give in.
+			We all know people who act irrationally, erratically, or who think rules, regulations and laws don't apply
+			to them.
 			People who don't think about consequences, morals, ethics or deontology.
 		</p>
 
@@ -50,7 +54,8 @@
 		<br/>
 
 		<p>
-			I've always been fascinated by the Hippocratic Oath that physicians are obligated to take. I've also been amazed
+			I've always been fascinated by the Hippocratic Oath that physicians are obligated to take. I've also been
+			amazed
 			at how almost no other field (scientific or not) has such concepts in place. As Scientists, we help shape
 			the understanding of our world for future generation. We may have a great power over others but we,
 			more often than not, hold none of the responsibilities.
@@ -87,10 +92,10 @@
 
 	export default {
 		metaInfo() {
-			return this.$seo({
+			return {
 				title: this.title,
 				description: this.description,
-			});
+			};
 		},
 		components: {
 			Intro,
@@ -101,5 +106,5 @@
 				description: "The origin of the oath",
 			};
 		},
-	}
+	};
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<div :class="classes">
 		<dl class="_wrapper">
-			<dt class="_header" @click="toggle">
+			<dt class="_header" role="term" tabindex="0" @click="toggle" @keyup.enter.prevent="toggle">
 				<span class="_title">
 					{{ item.title }}
 
@@ -14,7 +14,7 @@
 					</a> -->
 				</span>
 
-				<svg class="_toggleIcon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+				<svg class="_toggleIcon" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
 					<title>{{ svgAlt }}</title>
 					<path d="M5 6L10 11L15 6L17 7L10 14L3 7L5 6Z"/>
 				</svg>
@@ -51,7 +51,7 @@
 				this.collapsed = !this.collapsed;
 			},
 		},
-	}
+	};
 </script>
 
 <style lang="scss" scoped>
@@ -112,7 +112,12 @@
 			cursor: pointer;
 
 			transition: $transitionDuration ease-in-out;
-			transition-property: max-height, padding, opacity, border-radius;
+			transition-property: max-height, padding, opacity, border-radius, box-shadow;
+
+			&:focus {
+				outline: none;
+				box-shadow: 0 2px 4px 2px rgba(white, 0.5);
+			}
 
 			&::selection {
 				color: $color;

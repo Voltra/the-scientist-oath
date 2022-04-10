@@ -1,30 +1,30 @@
 <static-query>
 query {
-	metadata {
-		scientists {
-			id,
-			displayName,
-			website,
-			title,
-			timeFrame,
-			flag
-		}
-	}
+metadata {
+scientists {
+id,
+displayName,
+website,
+title,
+timeFrame,
+flag
+}
+}
 }
 </static-query>
 
 <template>
 	<Layout class="scientists linkList">
 		<Intro
-			:title="title"
 			:subTitle="description"
+			:title="title"
 		/>
 
 		<div v-for="scientist in scientists" :key="scientist.id" itemscope itemtype="https://schema.org/Person">
 			<span class="dont-print">
 				{{ scientist.flag }}
 			</span>
-			<a :href="scientist.website" target="_blank" tabindex="0" itemprop="name url sameAs">
+			<a :href="scientist.website" itemprop="name url sameAs" tabindex="0" target="_blank">
 				{{ scientist.displayName }}
 			</a>
 			({{ scientist.timeFrame }}) | {{ scientist.title }}
@@ -40,10 +40,10 @@ query {
 
 	export default {
 		metaInfo() {
-			return this.$seo({
+			return {
 				title: this.title,
 				description: this.description,
-			});
+			};
 		},
 		components: {
 			Intro,
@@ -59,5 +59,5 @@ query {
 				return this.$static.metadata.scientists;
 			},
 		},
-	}
+	};
 </script>

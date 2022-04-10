@@ -1,19 +1,19 @@
 <static-query>
-	query {
-		metadata {
-			oathItems {
-				slug
-				title
-				description
-			}
-		}
-	}
+query {
+metadata {
+oathItems {
+slug
+title
+description
+}
+}
+}
 </static-query>
 
 <template>
 	<section>
 		<ul class="oathItems">
-			<li v-for="item in oathItems" :key="item.slug" :id="item.slug" class="_item">
+			<li v-for="item in oathItems" :id="item.slug" :key="item.slug" class="_item">
 				<OathItem :item="item"/>
 			</li>
 		</ul>
@@ -30,7 +30,7 @@
 				return this.$static.metadata.oathItems;
 			},
 		},
-	}
+	};
 </script>
 
 <style lang="scss" scoped>

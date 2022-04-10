@@ -1,8 +1,8 @@
 <static-query>
 query {
-	metadata {
-		siteName
-	}
+metadata {
+siteName
+}
 }
 </static-query>
 
@@ -10,19 +10,19 @@ query {
 	<div class="layout" itemscope itemtype="https://schema.org/WebPage">
 		<header class="header dont-print">
 			<strong>
-				<g-link to="/" itemprop="relatedLink significantLink">
-					<g-image class="_logo" src="@/assets/svg/logo.svg" :alt="logoAlt" width="80" height="80"/>
+				<g-link itemprop="relatedLink significantLink" to="/">
+					<g-image :alt="logoAlt" class="_logo" height="80" src="@/assets/svg/logo.svg" width="80"/>
 				</g-link>
 			</strong>
 
 			<nav class="nav">
-				<g-link class="nav__link" to="/scientists" itemprop="relatedLink significantLink">
+				<g-link class="nav__link" itemprop="relatedLink significantLink" to="/scientists">
 					Scientists
 				</g-link>
-				<g-link class="nav__link" to="/credits" itemprop="relatedLink significantLink">
+				<g-link class="nav__link" itemprop="relatedLink significantLink" to="/credits">
 					Credits
 				</g-link>
-				<g-link class="nav__link" to="/why" itemprop="relatedLink significantLink">
+				<g-link class="nav__link" itemprop="relatedLink significantLink" to="/why">
 					Why
 				</g-link>
 			</nav>
