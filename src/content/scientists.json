@@ -1,0 +1,12 @@
+{
+	"scientists": [
+		{
+			"id": "Voltra",
+			"displayName": "Voltra the Dev",
+			"website": "https://www.ludwig-guerin.fr?utm_source=oath&utm_campaign=external",
+			"title": "Computer Science Engineer, front-end developer",
+			"timeFrame": "Since 2022",
+			"flag": "\uD83C\uDDEB\uD83C\uDDF7"
+		}
+	]
+}

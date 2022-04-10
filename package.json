@@ -1,0 +1,33 @@
+{
+	"name": "the-scientist-oath",
+	"private": true,
+	"version": "1.0.0",
+	"scripts": {
+		"build": "gridsome build",
+		"develop": "gridsome develop",
+		"explore": "gridsome explore",
+		"lint": "eslint \"./**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
+	},
+	"dependencies": {
+		"@gridsome/plugin-sitemap": "^0.4.0",
+		"@gridsome/source-filesystem": "^0.6.2",
+		"gridsome": "^0.7.0",
+		"gridsome-plugin-precompress": "^1.0.0",
+		"gridsome-plugin-seo": "^1.0.2",
+		"gridsome-plugin-service-worker": "^0.2.8",
+		"gridsome-plugin-static-metadata": "0.0.1",
+		"gridsome-source-static-meta": "^1.0.1"
+	},
+	"devDependencies": {
+		"@vue/eslint-config-prettier": "^7.0.0",
+		"eslint": "^7.32.0",
+		"eslint-plugin-gridsome": "^1.6.2",
+		"eslint-plugin-vue": "^8.5.0",
+		"gh-pages": "^3.2.3",
+		"sass": "^1.49.9",
+		"sass-loader": "^10.1.1",
+		"vue-eslint-parser": "^8.3.0"
+	}
+}
