@@ -1,12 +1,12 @@
 <static-query>
 query {
-metadata {
-oathItems {
-slug
-title
-description
-}
-}
+	metadata {
+		oathItems {
+			slug
+			title
+			description
+		}
+	}
 }
 </static-query>
 
