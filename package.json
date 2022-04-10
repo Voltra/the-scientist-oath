@@ -1,12 +1,12 @@
 {
 	"name": "the-scientist-oath",
 	"private": true,
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"scripts": {
 		"build": "gridsome build",
 		"develop": "gridsome develop",
 		"explore": "gridsome explore",
-		"lint": "eslint \"./**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern",
+		"lint": "eslint \"./src/**/*.{js,vue}\" --fix --no-error-on-unmatched-pattern",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},

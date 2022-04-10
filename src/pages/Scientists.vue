@@ -1,15 +1,15 @@
 <static-query>
 query {
-metadata {
-scientists {
-id,
-displayName,
-website,
-title,
-timeFrame,
-flag
-}
-}
+	metadata {
+		scientists {
+			id
+			displayName
+			website
+			title
+			timeFrame
+			flag
+		}
+	}
 }
 </static-query>
 

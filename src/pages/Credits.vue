@@ -1,12 +1,12 @@
 <static-query>
 query {
-metadata {
-attributions {
-for,
-url,
-name
-}
-}
+	metadata {
+		attributions {
+			for
+			url
+			name
+		}
+	}
 }
 </static-query>
 
