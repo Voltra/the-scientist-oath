@@ -1,25 +1,10 @@
-*.zip
-*.swp
-*.log
-*.ini
-.cache
-.DS_Store
-src/.temp
-node_modules/
-dist/
-temp/
-.env
-.htaccess
-.idea
-.vscode
-.brackets.json
-
 # Nuxt dev/build outputs
 .output
 .data
 .nuxt
 .nitro
 .cache
+dist
 
 # Node dependencies
 node_modules
@@ -37,4 +22,3 @@ logs
 .env
 .env.*
 !.env.example
-
