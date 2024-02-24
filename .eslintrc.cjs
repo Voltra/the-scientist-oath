@@ -1,5 +1,11 @@
 module.exports = {
 	root: true,
+	ignorePatterns: [
+		"node_modules/**/*",
+		"content/**/*",
+		".output/**/*",
+		"dist/**/*",
+	],
 	parser: "vue-eslint-parser",
 	parserOptions: {
 		parser: "@typescript-eslint/parser",

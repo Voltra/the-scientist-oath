@@ -8,8 +8,8 @@
 		"generate": "nuxt generate",
 		"postinstall": "nuxt prepare",
 		"lint": "npm run lint:js && npm run lint:css",
-		"lint:js": "eslint . --fix",
-		"lint:css": "stylelint . --fix",
+		"lint:js": "eslint . --fix --ext .ts,.vue -c .eslintrc.cjs",
+		"lint:css": "stylelint --fix **/*.{css,scss,vue}",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},

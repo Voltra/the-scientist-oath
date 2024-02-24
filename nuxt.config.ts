@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 				lang: "en"
 			},
 			charset: "utf-8",
-			viewport: "width=device-width, height=device-height, initial-scale=1, minimum-scale=0.1, maximum-scale=5, interactive-widget=resizes-content",
+			viewport: "width=device-width, height=device-height, initial-scale=1, minimum-scale=0.1, maximum-scale=5, interactive-widget=resizes-content"
 		}
 	},
 	modules: [

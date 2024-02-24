@@ -1,5 +1,12 @@
 export default {
 	root: true,
+	fix: true,
+	ignoreFiles: [
+		"node_modules/**/*",
+		"content/**/*",
+		".output/**/*",
+		"dist/**/*",
+	],
 	extends: [
 		"stylelint-config-standard-scss",
 		"stylelint-config-recommended-vue"

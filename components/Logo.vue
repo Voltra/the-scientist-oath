@@ -1,5 +1,5 @@
 <template>
-  <SvgLogo filled :fontControlled="false" title="The Scientist's Oath logo" />
+  <SvgLogo filled :font-controlled="false" title="The Scientist's Oath logo" />
 </template>
 
 <script setup lang="ts">
