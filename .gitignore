@@ -1,5 +1,7 @@
+*.zip
 *.swp
 *.log
+*.ini
 .cache
 .DS_Store
 src/.temp
@@ -8,3 +10,31 @@ dist/
 temp/
 .env
 .htaccess
+.idea
+.vscode
+.brackets.json
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
