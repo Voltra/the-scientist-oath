@@ -10,7 +10,7 @@
           :aria-expanded="expanded"
           @click="toggle()"
         >
-          <span class="_title">
+          <span class="_title text-left">
             {{ item.title }}
           </span>
 

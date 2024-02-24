@@ -11,14 +11,14 @@
         </NuxtLink>
       </strong>
 
-      <nav class="nav">
-        <NuxtLink class="ml-5 hover:underline" itemprop="relatedLink significantLink" to="/scientists">
+      <nav class="nav flex">
+        <NuxtLink class="block ml-5 hover:underline" itemprop="relatedLink significantLink" to="/scientists">
           Scientists
         </NuxtLink>
-        <NuxtLink class="ml-5 hover:underline" itemprop="relatedLink significantLink" to="/credits">
+        <NuxtLink class="block ml-5 hover:underline" itemprop="relatedLink significantLink" to="/credits">
           Credits
         </NuxtLink>
-        <NuxtLink class="ml-5 hover:underline" itemprop="relatedLink significantLink" to="/why">
+        <NuxtLink class="block ml-5 hover:underline" itemprop="relatedLink significantLink" to="/why">
           Why
         </NuxtLink>
       </nav>
@@ -33,3 +33,11 @@
 <script setup lang="ts">
 import Logo from "~/components/Logo.vue";
 </script>
+
+<style lang="scss" scoped>
+	@import "~/assets/css/variables";
+
+	.nav {
+		font-family: $title-font;
+	}
+</style>

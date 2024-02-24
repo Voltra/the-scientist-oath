@@ -10,7 +10,7 @@
       <span class="dont-print">
         {{ scientist.flag }}
       </span>
-      <a :href="scientist.website" itemprop="name url sameAs" tabindex="0" target="_blank">
+      <a class="ml-2 title" :href="scientist.website" itemprop="name url sameAs" tabindex="0" target="_blank">
         {{ scientist.displayName }}
       </a>
       ({{ scientist.timeFrame }}) | {{ scientist.title }}

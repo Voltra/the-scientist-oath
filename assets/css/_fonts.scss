@@ -3,3 +3,21 @@
 
 // Supports weights 300-900
 @import '@fontsource-variable/sansita-swashed';
+
+@mixin fontFace($fontName, $fontWeight) {
+	@font-face {
+		font-family: $fontName;
+		font-weight: $fontWeight;
+		font-style: normal;
+		font-display: swap;
+		@content;
+	}
+}
+
+@include fontFace("OpenDyslexic", normal) {
+	src: url("/fonts/OpenDyslexic-Regular.woff2") format("woff2");
+}
+
+@include fontFace("OpenDyslexic", bold) {
+	src: url("/fonts/OpenDyslexic-Bold.woff2") format("woff2");
+}

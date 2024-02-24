@@ -5,7 +5,7 @@ export default {
 		"node_modules/**/*",
 		"content/**/*",
 		".output/**/*",
-		"dist/**/*",
+		"dist/**/*"
 	],
 	extends: [
 		"stylelint-config-standard-scss",

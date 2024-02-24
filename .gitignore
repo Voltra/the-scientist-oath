@@ -2,6 +2,7 @@
 *.swp
 *.log
 *.ini
+*cache
 .cache
 .DS_Store
 src/.temp

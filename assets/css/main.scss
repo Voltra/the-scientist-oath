@@ -77,6 +77,10 @@ svg {
 	display: none;
 }
 
+.title {
+	font-family: $title-font;
+}
+
 .linkList {
 	& > ._item,
 	& > * > ._item {
